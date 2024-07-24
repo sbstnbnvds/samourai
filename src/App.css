@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: 'Unison Pro';
+  src: url('./assets/fonts/Type Juice - Unison Pro Bold.otf') format('opentype');
+}
+
+@font-face {
+  font-family: 'Cascadia';
+  src: url('./assets/fonts/Cascadia.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'The Stranger';
+  src: url('./assets/fonts/THE STRANGER SANS.OTF') format('opentype');
+}

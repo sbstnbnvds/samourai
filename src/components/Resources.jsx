@@ -9,13 +9,158 @@ import decoration3 from '../assets/images/Resources/decoration-3.svg';
 import decoration4 from '../assets/images/Resources/decoration-4.svg';
 
 const Resources = () => {
+
+  // SamouraiWallet
+  const samouraiWalletList = [
+    {
+      title: 'Samourai Wallet APK Download (v0.99.98ii)',
+      url: 'files/sw-signed-0.99.98ii.apk',
+    },
+    {
+      title: 'Samourai Wallet APK Signature',
+      url: 'https://freesamourai.com/sw_apk.html',
+    },
+    {
+      title: 'Build and Sign APK',
+      url: 'https://freesamourai.com/build_apk.html',
+    },
+    {
+      title: 'Samourai Wallet Archive Github',
+      url: 'https://github.com/Archive-Samourai-Wallet',
+    },
+    {
+      title: 'Samourai Wallet Github',
+      url: 'https://github.com/Archive-Samourai-Wallet/samourai-wallet-android',
+    },
+    {
+      title: 'ExtLibJ Github',
+      url: 'https://github.com/Archive-Samourai-Wallet/extlibj',
+    },
+    {
+      title: 'bitcoinj GitHub (Might not be fully up to date)',
+      url: 'https://github.com/noosphere888/bitcoinj',
+    },
+    {
+      title: 'Boltzmann Github',
+      url: 'https://github.com/Archive-Samourai-Wallet/boltzmann-java',
+    },
+    {
+      title: 'Samourai Wallet Documentation',
+      url: 'https://web.archive.org/web/20240521004220/https://docs.samourai.io/',
+    },
+    {
+      title: 'Samourai Wallet Restore',
+      url: 'https://web.archive.org/web/20240429033852/https://docs.samourai.io/wallet/restore-recovery',
+    },
+    {
+      title: 'Spend Tools (Online Cahoots currently down)',
+      url: 'https://web.archive.org/web/20240521004236/https://docs.samourai.io/en/spend-tools',
+    },
+    {
+      title: 'Cahoots - Manual (P2P coinjoin/payjoin w/o coordinator)',
+      url: 'https://web.archive.org/web/20240426040031mp_/https://docs.samourai.io/wallet/cahoots',
+    },
+    {
+      title: 'Manual Stonewallx2 Video (P2P coinjoin w/o coordinator)',
+      url: 'https://www.youtube.com/watch?v=F-b9wWw_kQs',
+    },
+    {
+      title: 'Privacy Enhanced Transactions',
+      url: 'https://web.archive.org/web/20240426040030mp_/https://docs.samourai.io/wallet/privacy-enhanced-transactions',
+    },
+    {
+      title: 'Stonewall (Decoy P2P coinjoin)',
+      url: 'https://planb.network/en/tutorials/privacy/stonewall',
+    },
+    {
+      title: 'Spending Privately',
+      url: 'https://bitcoiner.guide/privacy/spend/',
+    },
+    {
+      title: 'What We Protect',
+      url: 'https://foundation.xyz/2023/01/what-we-protect/',
+    },
+    {
+      title: 'Advanced Usage',
+      url: 'https://web.archive.org/web/20240426040031mp_/https://docs.samourai.io/wallet/advanced-usage',
+    },
+    {
+      title: 'Tools Menu',
+      url: 'https://web.archive.org/web/20240426040458mp_/https://docs.samourai.io/wallet/tools/',
+    },
+    {
+      title: 'Offline Mode (Sign Transactions)',
+      url: 'https://web.archive.org/web/20230129065513/https://docs.samourai.io/en/wallet/features/offline-mode',
+    },
+    {
+      title: 'Installing Samourai Wallet Offline',
+      url: 'https://blog.ronindojo.io/installing-samourai-wallet-offline/',
+    },
+    {
+      title: 'Samourai Archive',
+      url: 'https://github.com/lasermind/samourai-archive',
+    },
+    {
+      title: 'Migrating from Samourai Wallet into Sparrow Wallet (For Non-Dojo Users)',
+      url: 'https://freedom.tech/samourai-to-sparrow/',
+    },
+  ]
+
+  // Sentinel
+  const sentinelList = [
+    {
+      title: 'Sentinel Onion',
+      url: 'http://tlbpo3hf4oaj3e5u46r74ytz6tm7jkip7turjgvinndpdwupibbmxcid.onion/',
+    },
+    {
+      title: 'Sentinel APK Download (v5.0.1)',
+      url: 'files/sentinel-signed-5.0.1.apk',
+    },
+    {
+      title: 'Sentinel APK Signature',
+      url: 'https://freesamourai.com/sentinel_apk.html',
+    },
+    {
+      title: 'Sentinel GitHub',
+      url: 'https://github.com/wanderingking072/sentinel-android',
+    },
+    {
+      title: 'Sentinel Guide (Broadcast Offline Wallet Transactions)',
+      url: 'https://blog.ronindojo.io/discover-version-5-0-0-of-sentinel/',
+    },
+  ]
+
+  // Dojo
+  const dojoList = [
+    {
+      title: 'Dojo Github',
+      url: 'https://github.com/Dojo-Open-Source-Project/samourai-dojo',
+    },
+    {
+      title: 'Dojo Documentation',
+      url: 'https://web.archive.org/web/20240522145347/https://docs.samourai.io/en/dojo',
+    },
+    {
+      title: 'Dojo x86 Bitcoin Node Guide',
+      url: 'https://web.archive.org/web/20240528214238/https://kyc3.life/dojo-x86-bitcoin-node-guide/',
+    },
+    {
+      title: "Vanilla Dojo, it's really this easy. (Might be a little outdated)",
+      url: 'https://web.archive.org/web/20220921035334/https://sovrnbitcoiner.com/vanilla-dojo-its-really-this-easy/',
+    },
+    {
+      title: 'Dojo Sovereignty Confirmed 85% of Userbase',
+      url: 'https://blog.ronindojo.io/most-whirlpool-users-run-dojo/',
+    },
+  ]
+
   return (
     <section className="container mx-auto pb-28" id='resources'>
       {/* Title */}
       <div className="flex justify-center items-center gap-x-2 mb-6">
-        <img src={sparkle} alt="" className='h-32' />
+        <img src={sparkle} alt="" className='h-32' loading='lazy' />
         <h2 className="font-sans text-8xl text-red font-bold uppercase">resources</h2>
-        <img src={sparkle} alt="" className='h-32' />
+        <img src={sparkle} alt="" className='h-32' loading='lazy' />
       </div>
 
       <div className='px-12'>
@@ -29,32 +174,22 @@ const Resources = () => {
               <div className="flex justify-between mb-1 px-2">
                 <p className="font-mono text-3xl basis-auto font-black">Samourai Wallet</p>
                 <div className='basis-2/12 block self-center' alt="" >
-                  <img src={windowIcons} alt="" />
+                  <img src={windowIcons} alt="" loading='lazy' />
                 </div>
               </div>
               {/* Content */}
               <div className='bg-black text-white'>
                 <ul className='ms-4 pe-2 h-[28rem] text-3xl font-mono overflow-y-scroll'>
                   <li className='py-6 pt-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
+                    <a className='block ease-out hover:text-red transition-color duration-300' href="https://web.archive.org/web/20240420204321/https://www.samouraiwallet.com/" target='__blank'>Samourai Wallet</a>
                   </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-8 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
+                  {samouraiWalletList.map((samourai, key) => {
+                    return (<li className='py-6 border-t-2' key={key}>
+                      <a className='block ease-out hover:text-red transition-color duration-300' href={samourai.url}>
+                        {samourai.title}
+                      </a>
+                    </li>)
+                  })}
                 </ul>
               </div>
             </div>
@@ -76,32 +211,25 @@ const Resources = () => {
               <div className="flex justify-between mb-1 px-2">
                 <p className="font-mono font-black text-3xl basis-auto">Sentinel</p>
                 <div className='basis-2/12 block self-center' alt="" >
-                  <img src={windowIcons} alt="" />
+                  <img src={windowIcons} alt="" loading='lazy' />
                 </div>
               </div>
               {/* Content */}
               <div className='bg-black text-white'>
                 <ul className='ms-4 pe-2 h-[28rem] text-3xl font-mono overflow-y-scroll'>
                   <li className='py-6 pt-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
+                    <a className='block ease-out hover:text-red transition-color duration-300' href="https://sentinel.watch/">
+                      Sentinel
                     </a>
                   </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-8 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
+                  {sentinelList.map((sentinel, key) => {
+
+                    return (<li className='py-6 border-t-2'>
+                      <a className='block ease-out hover:text-red transition-color duration-300' href={sentinel.url}>
+                        {sentinel.title}
+                      </a>
+                    </li>)
+                  })}
                 </ul>
               </div>
             </div>
@@ -118,32 +246,26 @@ const Resources = () => {
               <div className="flex justify-between mb-1 px-2">
                 <p className="font-mono text-3xl basis-auto font-black">Dojo</p>
                 <div className='basis-2/12 block self-center' alt="" >
-                  <img src={windowIcons} alt="" />
+                  <img src={windowIcons} alt="" loading='lazy' />
                 </div>
               </div>
               {/* Content */}
               <div className='bg-black text-white'>
                 <ul className='ms-4 pe-2 h-[28rem] text-3xl font-mono overflow-y-scroll'>
+                  
                   <li className='py-6 pt-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
+                    <a className='block ease-out hover:text-red transition-color duration-300' href="https://github.com/Dojo-Open-Source-Project" target='__blank'>
+                    Dojo Open Source Project
                     </a>
                   </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-8 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
+                  {dojoList.map((dojo, key) => {
+
+                    return (<li className='py-6 border-t-2'>
+                      <a className='block ease-out hover:text-red transition-color duration-300' href={dojo.url} target='__blank'>
+                        {dojo.title}
+                      </a>
+                    </li>)
+                  })}
                 </ul>
               </div>
             </div>
@@ -155,8 +277,8 @@ const Resources = () => {
         {/* Fourth Row */}
         <div className='flex items-center justify-end mb-16'>
           <div className='basis-auto'>
-            <a className='font-stranger font-extralight text-7xl text-red ease-out hover:text-white transition-color duration-300 rotate-180' href='https://ronindojo.io/freesamourai/' target='__blank' 
-            style={{"writingMode":"vertical-lr"}}>#freesamourai</a>
+            <a className='font-stranger font-extralight text-7xl text-red ease-out hover:text-white transition-color duration-300 rotate-180' href='https://ronindojo.io/freesamourai/' target='__blank'
+              style={{ "writingMode": "vertical-lr" }}>#freesamourai</a>
           </div>
           <div className="basis-8/12 ms-20">
             {/* Content Box */}
@@ -165,7 +287,7 @@ const Resources = () => {
               <div className="flex justify-between mb-1 px-2">
                 <p className="font-mono text-3xl basis-auto font-black">RoninDojo</p>
                 <div className='basis-2/12 block self-center' alt="" >
-                  <img src={windowIcons} alt="" />
+                  <img src={windowIcons} alt="" loading='lazy' />
                 </div>
               </div>
               {/* Content */}
@@ -205,7 +327,7 @@ const Resources = () => {
               <div className="flex justify-between mb-1 px-2">
                 <p className="font-mono text-3xl basis-auto font-black">PayNyms</p>
                 <div className='basis-2/12 block self-center' alt="" >
-                  <img src={windowIcons} alt="" />
+                  <img src={windowIcons} alt="" loading='lazy' />
                 </div>
               </div>
               {/* Content */}
@@ -238,7 +360,7 @@ const Resources = () => {
           <div className='basis-auto relative -left-16 -z-50'>
             <img src={decoration4} alt="" className='w-80' loading='lazy' />
           </div>
-        </div>  
+        </div>
       </div>
 
     </section>

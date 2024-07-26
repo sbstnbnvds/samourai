@@ -4,8 +4,20 @@
 
 @font-face {
   font-family: 'Unison Pro';
-  src: url('./assets/fonts/Type Juice - Unison Pro Bold.otf') format('opentype');
+  src: url('./assets/fonts/TYPE JUICE - UNISON PRO BOLD.OTF') format('opentype');
+  font-weight: 700;
 }
+
+@font-face {
+  font-family: 'Unison Pro';
+  src: url('./assets/fonts/TYPE JUICE - UNISON PRO LIGHT.OTF') format('opentype');
+  font-weight: 300;
+}
+
+/* @font-face {
+  font-family: 'Unison Pro Round';
+  src: url('./assets/fonts/TYPE JUICE - UNISON PRO BOLD ROUND.OTF') format('opentype');
+} */
 
 @font-face {
   font-family: 'Cascadia';
@@ -15,4 +27,28 @@
 @font-face {
   font-family: 'The Stranger';
   src: url('./assets/fonts/THE STRANGER SANS.OTF') format('opentype');
+}
+
+
+/* Scrollbar */
+/* width */
+#news ::-webkit-scrollbar {
+  width: 20px;
+}
+
+/* Track */
+#news ::-webkit-scrollbar-track {
+  /* box-shadow: inset 0 0 5px grey;  */
+  border-radius: 10px;
+}
+ 
+/* Handle */
+#news ::-webkit-scrollbar-thumb {
+  background: rgb(236, 59, 38) ;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+#news ::-webkit-scrollbar-thumb:hover {
+  background: rgb(167, 41, 27); 
 }

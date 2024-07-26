@@ -219,7 +219,7 @@ const Resources = () => {
       {/* Title */}
       <div className="flex justify-center items-center gap-x-2 mb-6">
         <img src={sparkle} alt="" className='h-32' loading='lazy' />
-        <h2 className="font-sans text-8xl text-red font-bold uppercase">resources</h2>
+        <h2 className="font-sans text-4xl sm:text-7xl md:text-8xl text-red font-bold uppercase">resources</h2>
         <img src={sparkle} alt="" className='h-32' loading='lazy' />
       </div>
 

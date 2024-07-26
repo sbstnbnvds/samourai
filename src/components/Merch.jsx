@@ -12,7 +12,7 @@ const Merch = () => {
       <div className="flex mb-8">
         <img src={decoration1} alt="" className='me-10 w-56' />
         <div className='relative grow self-center'>
-          <h2 className="pt-3 pb-10 ps-4 font-sans text-8xl text-red font-bold uppercase border-b-2 border-t-2 border-white">Merch</h2>
+          <h2 className="pt-3 pb-10 ps-4 font-sans text-4xl sm:text-7xl md:text-8xl text-red font-bold uppercase border-b-2 border-t-2 border-white">Merch</h2>
           <img src={decoration2} alt="" className='h-36 pt-2 absolute bottom-1 end-4 ' />
         </div>
       </div>

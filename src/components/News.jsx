@@ -93,7 +93,7 @@ const News = () => {
           <div className='flex basis-full gap-x-16 mt-10 border-t-2 pt-2'>
             {/* First Column */}
             <div className='flex flex-col items-start basis-12 gap-y-4'>
-              <h2 className='font-sans text-8xl text-red font-bold uppercase'>News</h2>
+              <h2 className='font-sans text-4xl sm:text-7xl md:text-8xl text-red font-bold uppercase'>News</h2>
               {/* Bars Container */}
               <div className="flex flex-wrap gap-2.5">
                 <img src={decoration2} alt="" className='h-7' loading='lazy' />

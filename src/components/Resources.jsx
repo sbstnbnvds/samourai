@@ -154,6 +154,66 @@ const Resources = () => {
     },
   ]
 
+  // RoninDojo
+  const roninDojoList = [
+    {
+      title: 'RoninDojo Gitea Onion',
+      url: 'http://2l2o5umijiwxjioxwpsvwxe6pr75tj7r5rggnl5ze256guwvtee3kpqd.onion/Ronin',
+    },
+    {
+      title: 'RoninDojo Documentation',
+      url: 'https://web.archive.org/web/20240426061333/https://wiki.ronindojo.io/en/home',
+    },
+    {
+      title: 'RoninDojo Blog',
+      url: 'https://blog.ronindojo.io/',
+    },
+    {
+      title: 'Always Rise After a Fall',
+      url: 'https://blog.ronindojo.io/always-rise-after-a-fall/',
+    },
+    {
+      title: 'Setting Up Your Tanto - Tutorial',
+      url: 'https://bitcointv.com/w/xqDcsAWgJHbNyaZbHcArHM',
+    },
+    {
+      title: 'RoninUI v2.0 - Preview',
+      url: 'https://bitcointv.com/w/p/hpAXspsv8Fze5LRwunarKv',
+    },
+    {
+      title: 'How to install RoninDojo on a PC (Intel/AMD-x86_64)',
+      url: 'https://estudiobitcoin.com/how-to-install-ronindojo-pc-intel-amd-x86_64/',
+    },
+  ]
+
+  // PayNyms
+  const PayNymsList = [
+    {
+      title: 'PayNyms Documentation',
+      url: 'https://web.archive.org/web/20240426040030mp_/https://docs.samourai.io/wallet/paynyms',
+    },
+    {
+      title: 'PayNyms 101',
+      url: 'https://bitcoiner.guide/paynym/',
+    },
+    {
+      title: 'How BIP47 Works',
+      url: 'https://web.archive.org/web/20240508103537/https://blog.samourai.is/how-bip47-works/',
+    },
+    {
+      title: 'BIP47 PayNym',
+      url: 'https://planb.network/en/tutorials/privacy/paynym-bip47',
+    },
+    {
+      title: 'Making sense of stealth addresses',
+      url: 'https://foundation.xyz/2023/02/making-sense-of-stealth-addresses/',
+    },
+    {
+      title: 'Auth47 PayNyms',
+      url: 'https://blog.ronindojo.io/auth47-paynyms/',
+    },
+  ]
+
   return (
     <section className="container mx-auto pb-28" id='resources'>
       {/* Title */}
@@ -252,10 +312,10 @@ const Resources = () => {
               {/* Content */}
               <div className='bg-black text-white'>
                 <ul className='ms-4 pe-2 h-[28rem] text-3xl font-mono overflow-y-scroll'>
-                  
+
                   <li className='py-6 pt-2'>
                     <a className='block ease-out hover:text-red transition-color duration-300' href="https://github.com/Dojo-Open-Source-Project" target='__blank'>
-                    Dojo Open Source Project
+                      Dojo Open Source Project
                     </a>
                   </li>
                   {dojoList.map((dojo, key) => {
@@ -274,7 +334,7 @@ const Resources = () => {
             <img src={decoration3} alt="" className='w-64' loading='lazy' />
           </div>
         </div>
-        {/* Fourth Row */}
+        {/* Fourth Row - Ronin dojo*/}
         <div className='flex items-center justify-end mb-16'>
           <div className='basis-auto'>
             <a className='font-stranger font-extralight text-7xl text-red ease-out hover:text-white transition-color duration-300 rotate-180' href='https://ronindojo.io/freesamourai/' target='__blank'
@@ -292,27 +352,17 @@ const Resources = () => {
               </div>
               {/* Content */}
               <div className='bg-black text-white'>
-                <ul className='ms-4 pe-2 text-3xl font-mono overflow-y-scroll'>
+                <ul className='ms-4 pe-2 h-[28rem] text-3xl font-mono overflow-y-scroll'>
                   <li className='py-6 pt-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
+                    <a className='block ease-out hover:text-red transition-color duration-300' href="" target='__blank'>RoninDojo</a>
                   </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-8 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
+                  {roninDojoList.map((roninDojo, key) => {
+                    return (
+                      <li className='py-6 border-t-2'>
+                        <a className='block ease-out hover:text-red transition-color duration-300' href={roninDojo.url} target='__blank'>
+                          {roninDojo.title}</a>
+                      </li>)
+                  })}
                 </ul>
               </div>
             </div>
@@ -334,25 +384,16 @@ const Resources = () => {
               <div className='bg-black text-white'>
                 <ul className='ms-4 pe-2 h-[28rem] text-3xl font-mono overflow-y-scroll'>
                   <li className='py-6 pt-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
+                    <a className='block ease-out hover:text-red transition-color duration-300' href="https://paynym.is/" target='__blank'>
+                      PayNyms</a>
                   </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
+                  {PayNymsList.map((PayNyms, key) => {
+                    return (<li className='py-6 border-t-2'>
+                    <a className='block ease-out hover:text-red transition-color duration-300' href={PayNyms.url} target='__blank'>
+                      {PayNyms.title}
                     </a>
-                  </li>
-                  <li className='py-6 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
-                  <li className='py-8 border-t-2'>
-                    <a className='block' href="">
-                      Samurai Indictment & FBI Notice are an Assault on Bitcoin and Privacy
-                    </a>
-                  </li>
+                  </li>)
+                  })}
                 </ul>
               </div>
             </div>

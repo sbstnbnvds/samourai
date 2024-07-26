@@ -25,11 +25,11 @@ const Donate = () => {
               {/* Video */}
               <div className='aspect-video'>
                 {/* <img src={bannerImage}  alt="" /> */}
-                <iframe className='object-cover h-full w-full' width="560" height="315" src="https://www.youtube.com/embed/36ZCHObzWeI?si=MtFVOBWtYMavVLun" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                <iframe className='object-cover h-full w-full' width="560" height="315" src="https://www.youtube.com/embed/36ZCHObzWeI?si=MtFVOBWtYMavVLun" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe>
               </div>
             </div>
             {/* #FREESAMOURAI */}
-            <a className='font-stranger font-extralight -ms-1 text-[7rem] hover:text-red transition-color duration-300' href='https://ronindojo.io/freesamourai/' target='__blank'>#freesamourai</a>
+            <a className='font-stranger font-extralight -ms-1 text-[7rem] ease-out hover:text-red transition-color duration-300' href='https://ronindojo.io/freesamourai/' target='__blank'>#freesamourai</a>
           </div>
           {/* Banner Image */}
           <div className='relative bottom-3'>
@@ -39,12 +39,12 @@ const Donate = () => {
         {/* Second Row */}
         <div className="flex justify-between text-4xl text-red font-bold">
 
-          <a className='w-[16.1em] transition-colors duration-300 hover:text-white' href='https://p2prights.org/donate.html' target='__blank'>donate to official samourai legal defense fund</a>
+          <a className='w-[16.1em] transition-colors duration-300 ease-out hover:text-white' href='https://p2prights.org/donate.html' target='__blank'>donate to official samourai legal defense fund</a>
           {/* <p>donate to official samourai legal defense fund</p> */}
 
           <img src={decoration1} alt="" className='w-10' />
           <div className='flex flex-col gap-6 w-[12em]'>
-            <a className='transition-colors duration-300 hover:text-white' href='https://blog.ronindojo.io/samourai-defense-fund/' target='__blank'>samourai defense fund</a>
+            <a className='transition-colors duration-300 ease-out hover:text-white' href='https://blog.ronindojo.io/samourai-defense-fund/' target='__blank'>samourai defense fund</a>
             <img src={decoration2} alt="" className='w-80' />
           </div>
           {/* <p className=''>samourai defense fund</p> */}

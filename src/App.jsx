@@ -3,6 +3,7 @@ import './App.css'
 import Donate from './components/Donate'
 import Merch from './components/Merch'
 import News from './components/News'
+import Resources from './components/Resources'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Donate />
       <Merch />
       <News />
+      <Resources />
     </ div>
   )
 }

@@ -21,7 +21,7 @@ const Merch = () => {
 
         <div className='aspect-square basis-6/12 relative p-1'>
           <a className='border-2 h-full flex items-center overflow-hidden' href='https://ungovernablemisfits.com/store/' target='__blank'>
-            <img src={merch1} className='w-full h-auto transition-transform duration-500 hover:scale-110' alt="" loading='lazy'/>
+            <img src={merch1} className='w-full h-auto transition-transform duration-500 ease-out hover:scale-110' alt="" loading='lazy'/>
           </a>
           {/* Frame Decorations */}
           <div className='w-14 h-2.5 bg-white absolute top-0 left-0' />
@@ -39,7 +39,7 @@ const Merch = () => {
         </div>
         <div className='aspect-video basis-6/12 relative p-1'>
           <a className='border-2 h-full flex items-center overflow-hidden' href='https://ungovernablemisfits.com/store/' target='__blank'>
-            <img src={merch2} className='w-full h-auto transition-transform duration-500 hover:scale-110' alt="" loading='lazy'/>
+            <img src={merch2} className='w-full h-auto transition-transform duration-500 ease-out hover:scale-110' alt="" loading='lazy'/>
           </a>
           {/* Frame Decorations */}
           <div className='w-14 h-2.5 bg-white absolute top-0 left-0' />

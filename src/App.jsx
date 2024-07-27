@@ -7,7 +7,7 @@ import Resources from './components/Resources'
 
 function App() {
   return (
-    <div className='px-16'>
+    <div className='sm:px-16'>
       <Donate />
       <Merch />
       <News />

@@ -37,15 +37,15 @@ const Donate = () => {
           </div>
         </div>
         {/* Second Row */}
-        <div className="flex flex-wrap items-center space-y-8 lg:space-y-0 justify-between text-4xl text-red font-bold">
+        <div className="flex flex-wrap items-center space-y-8 lg:space-y-0 justify-between text-3xl xl:text-4xl text-red font-bold">
 
-          <a className='basis-12/12 lg:basis-7/12 xl:w-[16.1em] transition-colors duration-300 ease-out hover:text-white' href='https://p2prights.org/donate.html' target='__blank'>donate to official samourai legal defense fund</a>
+          <a className='basis-12/12 lg:w-[16.1em] transition-colors duration-300 ease-out hover:text-white' href='https://p2prights.org/donate.html' target='__blank'>donate to official samourai legal defense fund</a>
           
 
-          <img src={decoration1} alt="" className='hidden lg:block w-10' />
-          <div className='text-end flex flex-col gap-6 basis-full lg:basis-3/12 xl:w-[12em]'>
-            <a className='xl:text-start transition-colors duration-300 ease-out hover:text-white' href='https://blog.ronindojo.io/samourai-defense-fund/' target='__blank'>samourai defense fund</a>
-            <img src={decoration2} alt="" className='w-80' />
+          <img src={decoration1} alt="" className='hidden xl:block w-10' />
+          <div className='flex flex-col gap-6 lg:w-[12em]'>
+            <a className='transition-colors duration-300 ease-out hover:text-white' href='https://blog.ronindojo.io/samourai-defense-fund/' target='__blank'>samourai defense fund</a>
+            <img src={decoration2} alt="" className='w-60 sm:w-80' />
           </div>
 
         </div>

@@ -10,10 +10,10 @@ const Merch = () => {
     <section className="container mx-auto mb-8">
       {/* Title */}
       <div className="flex mb-8">
-        <img src={decoration1} alt="" className='hidden xl:block me-10 w-56' />
+        <img src={decoration1} alt="" className='hidden xl:block me-10 w-56' loading='lazy'/>
         <div className='relative grow self-center'>
           <h2 className="pt-3 pb-10 ps-4 font-sans text-4xl sm:text-7xl md:text-8xl text-red font-bold uppercase border-b-2 border-t-2 border-white">Merch</h2>
-          <img src={decoration2} alt="" className='hidden lg:block h-36 pt-2 absolute bottom-1 end-4 ' />
+          <img src={decoration2} alt="" className='hidden lg:block h-36 pt-2 absolute bottom-1 end-4 ' loading='lazy'/>
         </div>
       </div>
       {/* Merch Row */}
@@ -24,7 +24,7 @@ const Merch = () => {
             <img src={merch1} className='w-full h-auto transition-transform duration-500 ease-out hover:scale-110' alt="" loading='lazy' />
           </a>
           {/* Frame Decorations */}
-          <div>
+          <div className='hidden sm:block'>
             <div className='w-14 h-2.5 bg-white absolute top-0 left-0' />
             <div className='w-14 h-2.5 bg-white absolute top-0 right-0' />
             <div className='w-14 h-2.5 bg-white absolute bottom-0 left-0' />
@@ -41,7 +41,7 @@ const Merch = () => {
             <img src={merch2} className='w-full h-auto transition-transform duration-500 ease-out hover:scale-110' alt="" loading='lazy' />
           </a>
           {/* Frame Decorations */}
-          <div>
+          <div className='hidden sm:block'>
             <div className='w-14 h-2.5 bg-white absolute top-0 left-0' />
             <div className='w-14 h-2.5 bg-white absolute top-0 right-0' />
             <div className='w-14 h-2.5 bg-white absolute bottom-0 left-0' />

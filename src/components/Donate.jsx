@@ -20,7 +20,7 @@ const Donate = () => {
               <div className="hidden sm:flex justify-between mb-1">
                 <p className="font-mono lg:text-3xl basis-auto">https://freesamourai.com/</p>
                 <div className='basis-2/12 block self-center' alt="" >
-                  <img src={windowIcons} alt="" />
+                  <img src={windowIcons} alt="" loading='lazy'/>
                 </div>
               </div>
               {/* Video */}
@@ -42,10 +42,10 @@ const Donate = () => {
           <a className='basis-12/12 lg:w-[16.1em] transition-colors duration-300 ease-out hover:text-white' href='https://p2prights.org/donate.html' target='__blank'>donate to official samourai legal defense fund</a>
           
 
-          <img src={decoration1} alt="" className='hidden xl:block w-10' />
+          <img src={decoration1} alt="" className='hidden xl:block w-10' loading='lazy'/>
           <div className='flex flex-col gap-6 lg:w-[12em]'>
             <a className='transition-colors duration-300 ease-out hover:text-white' href='https://blog.ronindojo.io/samourai-defense-fund/' target='__blank'>samourai defense fund</a>
-            <img src={decoration2} alt="" className='w-60 sm:w-80' />
+            <img src={decoration2} alt="" className='w-60 sm:w-80' loading='lazy'/>
           </div>
 
         </div>

@@ -7,7 +7,10 @@ const Donate = () => {
   return (
     // mt-44
     <section className="container mx-auto mt-14 mb-8" id='donate'>
-      <h2 className="pb-6 mb-10 font-sans text-4xl sm:text-7xl md:text-8xl text-center text-red font-bold uppercase border-b-2 border-white overflow-x-hidden">Donate</h2>
+      <a
+        href='https://p2prights.org/donate.html'
+        target='__blank'
+        className="block pb-6 mb-10 font-sans text-4xl sm:text-7xl md:text-8xl text-center text-red font-bold uppercase border-b-2 border-white ease-out hover:text-white transition-color duration-300">Donate</a>
       {/* Content container */}
       <div className='px-4'>
         {/* First Row */}
@@ -20,7 +23,7 @@ const Donate = () => {
               <div className="hidden sm:flex justify-between mb-1">
                 <p className="font-mono lg:text-3xl basis-auto">https://freesamourai.com/</p>
                 <div className='basis-2/12 block self-center' alt="" >
-                  <img src={windowIcons} alt="" loading='lazy'/>
+                  <img src={windowIcons} alt="" loading='lazy' />
                 </div>
               </div>
               {/* Video */}
@@ -40,12 +43,12 @@ const Donate = () => {
         <div className="flex flex-wrap items-center space-y-8 lg:space-y-0 justify-between text-3xl xl:text-4xl text-red font-bold">
 
           <a className='basis-12/12 lg:w-[16.1em] transition-colors duration-300 ease-out hover:text-white' href='https://p2prights.org/donate.html' target='__blank'>donate to official samourai legal defense fund</a>
-          
 
-          <img src={decoration1} alt="" className='hidden xl:block w-10' loading='lazy'/>
+
+          <img src={decoration1} alt="" className='hidden xl:block w-10' loading='lazy' />
           <div className='flex flex-col gap-6 lg:w-[12em]'>
             <a className='transition-colors duration-300 ease-out hover:text-white' href='https://blog.ronindojo.io/samourai-defense-fund/' target='__blank'>samourai defense fund</a>
-            <img src={decoration2} alt="" className='w-60 sm:w-80' loading='lazy'/>
+            <img src={decoration2} alt="" className='w-60 sm:w-80' loading='lazy' />
           </div>
 
         </div>

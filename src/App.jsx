@@ -11,7 +11,7 @@ function App() {
       <Donate />
       <News />
       <Merch />
-      {/* <Resources /> */}
+      <Resources />
     </ div>
   )
 }

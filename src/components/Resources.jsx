@@ -218,16 +218,16 @@ const Resources = () => {
     <section className="container mx-auto pb-28" id='resources'>
       {/* Title */}
       <div className="flex justify-center items-center gap-x-2 mb-6">
-        <img src={sparkle} alt="" className='h-32' loading='lazy' />
-        <h2 className="font-sans text-4xl sm:text-7xl md:text-8xl text-red font-bold uppercase">resources</h2>
-        <img src={sparkle} alt="" className='h-32' loading='lazy' />
+        <img src={sparkle} alt="" className='hidden lg:block h-32' loading='lazy' />
+        <h2 className="font-sans text-4xl sm:text-6xl md:text-7xl lg:text-8xl text-red font-bold uppercase">resources</h2>
+        <img src={sparkle} alt="" className='hidden lg:block h-32' loading='lazy' />
       </div>
 
-      <div className='px-12'>
+      <div className='md:px-12'>
 
         {/* First Row */}
-        <div className='flex items-center mb-16'>
-          <div className="basis-8/12 me-20">
+        <div className='flex xl:flex-wrap items-center justify-center md:justify-start gap-x-20 mb-16'>
+          <div className="md:basis-8/12">
             {/* Content Box */}
             <div className='px-0.5 py-0.5 2 mb-0 text-black bg-white'>
               {/* Samourai Wallet */}
@@ -254,17 +254,17 @@ const Resources = () => {
               </div>
             </div>
           </div>
-          <div className='basis-auto'>
+          <div className='hidden md:block basis-3/12 xl:basis-auto'>
             <img src={decoration1} alt="" className='w-52' loading='lazy' />
           </div>
         </div>
         {/* Second Row */}
-        <div className='flex items-center justify-end mb-16'>
+        <div className='flex flex-wrap md:flex-nowrap items-center justify-center md:justify-end gap-x-20 gap-y-12 mb-16'>
           <div className='basis-auto'>
             <img src={decoration2} alt="" className='w-64' loading='lazy' />
           </div>
 
-          <div className="basis-8/12 ms-20">
+          <div className="basis-12/12 md:basis-8/12">
             {/* Content Box */}
             <div className='px-0.5 py-0.5 2 mb-0 text-black bg-white'>
               {/* Sentinel */}
@@ -298,8 +298,11 @@ const Resources = () => {
 
         </div>
         {/* Third Row */}
-        <div className='flex items-center mb-16'>
-          <div className="basis-8/12 me-20">
+        <div className='flex flex-row-reverse flex-wrap md:flex-nowrap justify-center md:justify-end items-center gap-x-20 gap-y-12 mb-16'>
+          <div className='basis-auto'>
+            <img src={decoration3} alt="" className='w-64' loading='lazy' />
+          </div>
+          <div className="basis-12/12 md:basis-8/12">
             {/* Content Box */}
             <div className='px-0.5 py-0.5 2 mb-0 text-black bg-white'>
               {/* Dojo */}
@@ -330,17 +333,16 @@ const Resources = () => {
               </div>
             </div>
           </div>
-          <div className='basis-auto'>
-            <img src={decoration3} alt="" className='w-64' loading='lazy' />
-          </div>
         </div>
+        {/* #freesamourai */}
+        <a className='block md:hidden mb-16 font-stranger font-extralight text-5xl sm:text-7xl text-red text-center ease-out hover:text-white transition-color duration-300' href='https://ronindojo.io/freesamourai/' target='__blank'>#freesamourai</a>
         {/* Fourth Row - Ronin dojo*/}
-        <div className='flex items-center justify-end mb-16'>
-          <div className='basis-auto'>
+        <div className='flex items-center justify-end gap-x-20 mb-16'>
+          <div className='hidden md:block basis-auto'>
             <a className='font-stranger font-extralight text-7xl text-red ease-out hover:text-white transition-color duration-300 rotate-180' href='https://ronindojo.io/freesamourai/' target='__blank'
               style={{ "writingMode": "vertical-lr" }}>#freesamourai</a>
           </div>
-          <div className="basis-8/12 ms-20">
+          <div className="md:basis-8/12">
             {/* Content Box */}
             <div className='px-0.5 py-0.5 2 mb-0 text-black bg-white'>
               {/* RoninDojo */}
@@ -369,8 +371,11 @@ const Resources = () => {
           </div>
         </div>
         {/* Fifth Row */}
-        <div className='flex items-center mb-16'>
-          <div className="basis-8/12">
+        <div className='flex flex-wrap flex-row-reverse md:flex-nowrap items-center justify-center md:justify-start gap-y-12 mb-16'>
+          <div className='basis-auto relative md:-left-16 -z-50'>
+            <img src={decoration4} alt="" className='w-80' loading='lazy' />
+          </div>
+          <div className="md:basis-8/12">
             {/* Content Box */}
             <div className='px-0.5 py-0.5 2 mb-0 text-black bg-white'>
               {/* PayNyms */}
@@ -389,17 +394,14 @@ const Resources = () => {
                   </li>
                   {PayNymsList.map((PayNyms, key) => {
                     return (<li className='py-6 border-t-2'>
-                    <a className='block ease-out hover:text-red transition-color duration-300' href={PayNyms.url} target='__blank'>
-                      {PayNyms.title}
-                    </a>
-                  </li>)
+                      <a className='block ease-out hover:text-red transition-color duration-300' href={PayNyms.url} target='__blank'>
+                        {PayNyms.title}
+                      </a>
+                    </li>)
                   })}
                 </ul>
               </div>
             </div>
-          </div>
-          <div className='basis-auto relative -left-16 -z-50'>
-            <img src={decoration4} alt="" className='w-80' loading='lazy' />
           </div>
         </div>
       </div>

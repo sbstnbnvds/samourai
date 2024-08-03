@@ -72,16 +72,7 @@ const News = () => {
     },
     // {
     //   title: '',
-    //   url: '',
-    // },
-    // {
-    //   title: '',
-    //   url: '',
-    // },
-    // {
-    //   title: '',
-    //   url: '',
-    // },
+    //   url: ''
   ]
 
   return (
@@ -130,10 +121,10 @@ const News = () => {
           <p className='mb-4 lg:mb-0 text-2xl sm:text-3xl lg:text-4xl text-red font-bold ease-out group-hover:text-white group-hover:-skew-x-12 transition-all duration-300'>indictment</p>
           <div className='h-16 flex basis-12/12 md:basis-auto gap-x-4 ease-out group-hover:-skew-x-12 transition-transform duration-300'>
             <img src={indictment1} loading='lazy' alt="" className='hidden xl:block' />
-            <img src={indictment2} loading='lazy' alt="" className='hidden xl:block'/>
+            <img src={indictment2} loading='lazy' alt="" className='hidden xl:block' />
             <img src={indictment3} loading='lazy' alt="" />
-            <img src={indictment4} loading='lazy' alt="" className='hidden xl:block'/>
-            <img src={indictment5} loading='lazy' alt="" className='hidden sm:block'/>
+            <img src={indictment4} loading='lazy' alt="" className='hidden xl:block' />
+            <img src={indictment5} loading='lazy' alt="" className='hidden sm:block' />
 
           </div>
 
@@ -199,7 +190,7 @@ const News = () => {
           <div className='basis-6/12 lg:basis-5/12 grow border-y-2 py-8'>
             <a className='block group' href="">
 
-              <p className='mb-5 text-2xl sm:text-3xl lg:text-4xl font-bold transition-color duration-300 ease-out group-hover:text-red'>The arrest of <br className='hidden lg:inline'/> <span className='text-red transition-color duration-300 ease-out group-hover:text-white'>Samourai Wallet</span></p>
+              <p className='mb-5 text-2xl sm:text-3xl lg:text-4xl font-bold transition-color duration-300 ease-out group-hover:text-red'>The arrest of <br className='hidden lg:inline' /> <span className='text-red transition-color duration-300 ease-out group-hover:text-white'>Samourai Wallet</span></p>
               <p className='text-xl sm:text-2xl lg:text-3xl text-wrap font-mono'>Developers Shows the US Government Hates Privacy and Freedom</p>
             </a>
           </div>
